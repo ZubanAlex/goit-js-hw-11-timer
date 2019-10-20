@@ -63,7 +63,7 @@ export class CountdownTimer {
     const timer = setInterval(() => {
       this.deltaTime = this.deltaTime - 1000;
       this.renderTimer();
-      if (this.time <= 0) {
+      if (this.deltaTime <= 0) {
         clearInterval(timer);
         return;
       }
